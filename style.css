@@ -14,6 +14,7 @@ header {
     text-align: center;
 }
 
+
 header, form {
     min-height: 20vh;
     padding-inline: 0.5rem;
@@ -21,7 +22,9 @@ header, form {
     justify-content: center;
     align-items: center;
 }
-
+header h1 {
+    text-align: center;
+}
 
 form input, 
 form button {
