@@ -25,8 +25,10 @@ function addTodo(event) {
     newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+
     // add todo to local storage 
-    saveLocalTodos(todoInput.value)
+    saveLocalTodos(todoInput.value);
+
     //check mark button
     const completedButton = document.createElement('button');
     completedButton.innerHTML = "<i class='fas fa-check'></i>";
@@ -47,7 +49,7 @@ function addTodo(event) {
 }
 
 
-//delete
+//delete 
 function deleteCheck(e) {
     const item = e.target;
 
@@ -76,11 +78,11 @@ function filterTodo(e) {
         
         switch(e.target.value) {
             case "all":
-                console.log(e.target.value);
+                //console.log(e.target.value);
                 todo.style.display = 'flex';
                 break;
             case "completed":
-                console.log(e.target.value);
+                //console.log(e.target.value);
                 if (todo.classList.contains('completed')) {
                     todo.style.display = 'flex';
                 } else {
